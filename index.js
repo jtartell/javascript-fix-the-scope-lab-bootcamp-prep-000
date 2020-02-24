@@ -25,3 +25,12 @@ function funkyFunction() {
 
 var greeting = funkyFunction()
 greeting('FUNKY!')
+
+ var funkyFunction = function() {
+    return function(){
+      return "FUNKY!"
+    }
+  }
+
+  var theFunk = funkyFunction()
+  theFunk()
